@@ -23,3 +23,16 @@ function insertTextNode() {
     li.append(capitalizeValue())
 }
 
+function createNewItemOnClick() {
+    if (isInputEmpty == false) {
+        insertListElement();
+        insertTextNode();
+        inputValue = "";
+    }
+}
+
+function createNewItemOnPress() {
+    if (isInputEmpty == false && event.keyCode == 13) {
+        createNewItemOnClick()
+    }
+}
