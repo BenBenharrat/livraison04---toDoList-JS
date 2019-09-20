@@ -31,8 +31,12 @@ function createNewItemOnClick() {
     }
 }
 
-function createNewItemOnPress() {
+function createNewItemOnPress(event) {
     if (isInputEmpty == false && event.keyCode == 13) {
         createNewItemOnClick()
     }
 }
+
+button.addEventListener("click", createNewItemOnClick);
+
+input.addEventListener("keypress", createNewItemOnPress);
