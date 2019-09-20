@@ -12,7 +12,7 @@ function isInputEmpty() {
 }
 
 function capitalizeValue() {
-    inputValue = inputValue[0].toUpperCase + inputValue.slice(1, inputValue.length);
+    inputValue = input.value[0].toUpperCase + input.value.slice(1, input.value.length);
 }
 
 function insertListElement() {
