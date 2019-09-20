@@ -3,18 +3,12 @@ let input = document.querySelector("input");
 let ul = document.querySelector("ul");
 let li = document.createElement("li");
 
-function inputLength() {
+function getInputLength() {
     return input.value.length;
 }
 
-function addListElement() {
-
+function isInputEmpty() {
+    return ( getInputLength() == 0) ? true : false;
 }
 
-function createListContent() {
 
-}
-
-function getInputValue () {
-
-}
