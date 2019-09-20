@@ -1,6 +1,5 @@
 let button = document.querySelector("button");
 let input = document.querySelector("input");
-let inputValue = input.value;
 let ul = document.querySelector("ul");
 let li = document.createElement("li");
 
