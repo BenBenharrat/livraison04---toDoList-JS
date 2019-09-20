@@ -15,3 +15,11 @@ function isInputEmpty() {
 function capitalizeValue() {
     inputValue = inputValue[0].toUpperCase + inputValue.slice(1, inputValue.length);
 }
+
+function insertListElement() {
+    ul.append(li)
+}
+function insertTextNode() {
+    li.append(capitalizeValue())
+}
+
