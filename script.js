@@ -26,7 +26,7 @@ function addNewItemInToDoList() {
     }
 
     function capitalizeInputValue() {
-        input.value = input.value[0].toUpperCase + input.value.slice(1, input.value.length);
+        input.value = input.value[0].toUpperCase() + input.value.slice(1, input.value.length);
     }
     function addInputValueInLi() {
         li.append(document.createTextNode(input.value));
