@@ -10,23 +10,30 @@ let li;
 
 
 
-
-
-function createElementLi() {
-    li = document.createElement("li");
+function addNewItemInToDoList() {
+    if(input.value.length > 0) {
+        createElementLi();
+        addInputValueInLi();
+        insertNewLi();
+        clearInput();
+    }
 }
 
-function addInputValueInLi() {
-    li.append(document.createTextNode(input.value));
-}
+    function createElementLi() {
+        li = document.createElement("li");
+    }
 
-function insertNewLi() {
-    ul.insertAdjacentElement("beforeend", li);
-}
+    function addInputValueInLi() {
+        li.append(document.createTextNode(input.value));
+    }
 
-function clearInput() {
-    input.value = "";
-}
+    function insertNewLi() {
+        ul.insertAdjacentElement("beforeend", li);
+    }
+
+    function clearInput() {
+        input.value = "";
+    }
 
 button.addEventListener("click", createNewItemOnClick);
 
