@@ -1,7 +1,9 @@
+'use strict'
+
 let button = document.querySelector("button");
 let input = document.querySelector("input");
 let ul = document.querySelector("ul");
-let li = document.createElement("li");
+
 
 function getInputLength() {
     return input.value.length;
@@ -12,11 +14,15 @@ function isInputEmpty() {
 }
 
 function capitalizeValue() {
-    inputValue = input.value[0].toUpperCase + input.value.slice(1, input.value.length);
+    return input.value[0].toUpperCase + input.value.slice(1, input.value.length);
+}
+
+function createListElement() {
+    document.createElement("li");
 }
 
 function insertListElement() {
-    ul.append(li)
+    ul.append(createListElement())
 }
 function insertTextNode() {
     li.append(capitalizeValue())
