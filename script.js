@@ -36,6 +36,6 @@ function addNewItemInToDoList() {
         input.value = "";
     }
 
-button.addEventListener("click", createNewItemOnClick);
+button.addEventListener("click", addNewItemInTodoList);
 
-input.addEventListener("keypress", createNewItemOnPress);
+input.addEventListener("keypress", getInputValueEnter);
