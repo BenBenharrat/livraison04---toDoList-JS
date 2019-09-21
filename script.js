@@ -14,6 +14,7 @@ function getInputValueEnter(key) {
 function addNewItemInToDoList() {
     if(input.value.length > 0) {
         createElementLi();
+        capitalizeInputValue();
         addInputValueInLi();
         insertNewLi();
         clearInput();
@@ -24,6 +25,9 @@ function addNewItemInToDoList() {
         li = document.createElement("li");
     }
 
+    function capitalizeInputValue() {
+        input.value = input.value[0].toUpperCase + input.value.slice(1, input.value.length);
+    }
     function addInputValueInLi() {
         li.append(document.createTextNode(input.value));
     }
