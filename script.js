@@ -18,7 +18,7 @@ function capitalizeValue() {
 }
 
 function createListElement() {
-    document.createElement("li");
+    li = document.createElement("li");
 }
 
 function insertListElement() {
