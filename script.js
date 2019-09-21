@@ -20,7 +20,9 @@ function addInputValueInLi() {
     li.append(document.createTextNode(input.value));
 }
 
-
+function insertNewLi() {
+    ul.insertAdjacentElement("beforeend", li);
+}
 
 function clearInput() {
     input.value = "";
