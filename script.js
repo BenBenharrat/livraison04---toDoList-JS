@@ -5,10 +5,11 @@ let input = document.querySelector("input");
 let ul = document.querySelector("ul");
 let li;
 
-
-
-
-
+function getInputValueEnter(key) {
+    if(key.keycode === 13 ) {
+        addNewItemInTodoList();
+    }
+}
 
 function addNewItemInToDoList() {
     if(input.value.length > 0) {
