@@ -5,7 +5,13 @@ let input = document.querySelector("input");
 let ul = document.querySelector("ul");
 let li;
 
-function clearInput
+function createElementLi() {
+    li = document.createElement("li");
+}
+
+function clearInput() {
+    input.value = "";
+}
 
 button.addEventListener("click", createNewItemOnClick);
 
