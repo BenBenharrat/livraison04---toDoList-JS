@@ -7,7 +7,7 @@ let li;
 
 function getInputValueEnter(key) {
     if(key.keycode === 13 ) {
-        addNewItemInTodoList();
+        addNewItemInToDoList();
     }
 }
 
@@ -36,6 +36,6 @@ function addNewItemInToDoList() {
         input.value = "";
     }
 
-button.addEventListener("click", addNewItemInTodoList);
+button.addEventListener("click", addNewItemInToDoList);
 
 input.addEventListener("keypress", getInputValueEnter);
