@@ -41,9 +41,7 @@ function addNewItemInToDoList() {
         input.value = "";
     }
 
-function strikethroughCompletedTask(strike) {
-    if
-}
+
 button.addEventListener("click", addNewItemInToDoList);
 
 input.addEventListener("keypress", getInputValueEnter);

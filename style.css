@@ -24,4 +24,11 @@ html {
     height: auto;
   }
 
-  /* 
+  /* BODY RULES */
+
+  body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
