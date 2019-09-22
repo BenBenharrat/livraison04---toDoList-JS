@@ -6,7 +6,8 @@ let ul = document.querySelector("ul");
 let li;
 
 function getInputValueEnter(key) {
-    if(key.keycode === 13 ) {
+    let code = key.charCode;
+    if(code === 13 ) { 
         addNewItemInToDoList();
     }
 }
@@ -40,6 +41,11 @@ function addNewItemInToDoList() {
         input.value = "";
     }
 
+function strikethroughCompletedTask(strike) {
+    if
+}
 button.addEventListener("click", addNewItemInToDoList);
 
 input.addEventListener("keypress", getInputValueEnter);
+
+ul.addEventListener("click", checkCompletedTask);
